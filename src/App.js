@@ -28,7 +28,7 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={Projects} />
-          <Route path="/file-reader" component={FileViewer} />
+          <Route path="/file" component={FileViewer} />
         </Switch>
        </Router>
     </div>
