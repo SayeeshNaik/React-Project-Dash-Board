@@ -26,11 +26,11 @@ const App = () => {
       {/* <Footer /> */}
       {/* <FileViewer/> */}
       <Router>
-      <Switch>
-        <Route exact path="/" component={Projects} />
-        <Route path="/file" component={FileViewer} />
-      </Switch>
-    </Router>
+        <Switch>
+          <Route exact path="/" component={Projects} />
+          <Route path="/file-reader" component={FileViewer} />
+        </Switch>
+       </Router>
     </div>
   );
 }
