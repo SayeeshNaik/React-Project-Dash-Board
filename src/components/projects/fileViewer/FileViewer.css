@@ -1,0 +1,76 @@
+
+.main-fileViewer{
+    background-color: black;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    white-space: pre;
+    overflow: hidden;
+}
+
+.main-fileViewer h1{
+    color: white;
+    font-size: 2rem;
+}
+
+.fileUploading-Button{
+    background-color: orange !important;
+    text-shadow: 2px 2px 2px black;
+    font-style: italic;
+    font-weight: 700 !important;
+    font-size: large !important;
+    padding: 1rem 2rem 1rem 2rem !important;
+    border-radius: 20px !important;
+    transition: 1s !important;
+    margin: 20px !important;
+    margin-bottom: 10px !important;
+}
+.fileUploading-Button:hover {
+    background-color: rgb(0, 144, 0) !important;
+    box-shadow: 5px 5px 5px white !important;
+    transform: scale(1.05);
+}
+.back-Button{
+    background-color: orange !important;
+    text-shadow: 2px 2px 2px black;
+    font-style: italic;
+    border-radius: 20px !important;
+    transition: 1s !important;
+}
+.back-Button:hover{
+    background-color: rgb(0, 144, 0) !important;
+    box-shadow: 2px 2px 1px white !important;
+    transform: scale(1.05);
+}
+
+.content-container{
+    min-height: 80vh;
+    max-height: 80vh;
+    min-width: 80%;
+    max-width: 80%;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(30, 30, 30);
+    transition: 2s;
+    padding-top: 0px;
+}
+
+.copy-content {
+    padding: 10px !important;
+    padding-bottom: 15px !important;
+    margin-bottom: 10px !important;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 5px 0px 5px rgb(30, 30, 30);
+    height: 10px;
+    position: fixed;
+    width: 79%;
+    margin-left: 0px;
+    color: white;
+    text-align: right;
+}
+
+
+.language-javascript {
+    font-size: 1rem !important;
+}
