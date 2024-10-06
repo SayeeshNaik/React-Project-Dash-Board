@@ -24,13 +24,14 @@ const App = () => {
       {/* <Header_Sidebar toggleSidebar={toggleSidebar} /> */}
       {/* <Projects /> */}
       {/* <Footer /> */}
-      <FileViewer/>
-      {/* <Router>
-        <Switch>
-          <Route exact path="/" component={Projects} />
-          <Route path="/file" component={FileViewer} />
-        </Switch>
-       </Router> */}
+      {/* <FileViewer/> */}
+      <Router>
+      <Switch>
+        <Route exact path="/" component={Projects} />
+        <Route path="/file" component={FileViewer} />
+        <Route exact path="*" component={FileViewer} />
+      </Switch>
+    </Router>
     </div>
   );
 }
