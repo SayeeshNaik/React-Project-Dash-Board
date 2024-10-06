@@ -15,6 +15,7 @@ const Projects = () => {
     const [projectsData, setProjectsData] = useState([])
     const [autoCardMovingStatus, setAutoCardMovingStatus] = useState(true)
 
+    
     useEffect(()=>{
         setProjectsData(dummy.projectsData)
         if(autoCardMovingStatus){
@@ -39,9 +40,11 @@ const Projects = () => {
         document.getElementById('slide').prepend(lists[lists.length - 1]);
     }
 
-    const route = () => {
-      history.push('file');
-      // window.location.reload()
+    const route = (projectPath) => {
+      if(projectPath){
+        history.push(projectPath);
+        window.location.reload()
+      }
     }
    
 
@@ -55,7 +58,7 @@ const Projects = () => {
           <div className="des">
              {data.description}
           </div>
-          <button style={{padding:'1rem', width:'50%', fontSize:'15px'}}><b>View Project </b> </button>
+          <button onClick={()=> route(data.path)} style={{padding:'1rem', width:'50%', fontSize:'15px'}}><b>View Project </b> </button>
           {/* <button style={{background:'red'}} onClick={route}>click</button> */}
         </div>
       </div>

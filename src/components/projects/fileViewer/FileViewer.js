@@ -5,8 +5,6 @@ import * as MuiComp from '@mui/material/';
 import * as MuiIcon from '@mui/icons-material/';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import ImgGrid from '../../../common-use/imgGrid/ImgGrid';
-
 
 function FileViewer() {
     const [uploadButtonVisibility, setUploadButtonVisibility] = useState(true);

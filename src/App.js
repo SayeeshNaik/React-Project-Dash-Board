@@ -29,7 +29,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Projects} />
         <Route path="/file" component={FileViewer} />
-        <Route exact path="*" component={FileViewer} />
+        <Route exact path="*" component={Projects} />
       </Switch>
     </Router>
     </div>
