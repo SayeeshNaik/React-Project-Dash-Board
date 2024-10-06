@@ -56,8 +56,7 @@ const Projects = () => {
              {data.description}
           </div>
           <button style={{padding:'1rem', width:'50%', fontSize:'15px'}}><b>View Project </b> </button>
-          <button style={{background:'red'}} onClick={route}>click</button>
-          <NavLink href='file'>dfasf</NavLink>
+          {/* <button style={{background:'red'}} onClick={route}>click</button> */}
         </div>
       </div>
       ))}
